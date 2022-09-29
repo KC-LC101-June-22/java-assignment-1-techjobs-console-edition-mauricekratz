@@ -119,7 +119,46 @@ public class TechJobs {
 
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
+        /*
+            Implement printJobs
+            --------------------
 
-        System.out.println("printJobs is not implemented yet");
+            Create a Nested Loop to Print Jobs
+
+               > jobs -- An ArrayList<HashMap<String, String>>
+                    > job -- A HashMap with job listing information
+                            (key) position type    |   (value) Data Scientist / Business Intelligence
+                            (key) name             |   (value) Sr. IT Analyst (Data/BI)
+                            (key) employer         |   (value) Bull Moose Industries
+                            (key) location         |   (value) Saint Louis
+                            (key) core competency  |   (value) Statistical Analysis
+         */
+        if (someJobs != null){
+            if (someJobs.size() == 0){
+                System.out.println("No Results");
+            } else {
+                for(HashMap job: someJobs){
+                    System.out.println("*****");
+                    for(Object jobField: job.keySet())
+                        System.out.println(jobField + ": " + job.get(jobField));
+                    System.out.println("*****\n");
+                }
+            }
+
+        } else{
+            // Working on Search by All
+            System.out.println("Momo!");
+        }
+
+
+
+
+
+
+
+
+
+
+
     }
 }

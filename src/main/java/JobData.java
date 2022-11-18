@@ -87,6 +87,7 @@ public class JobData {
         return jobs;
     }
 
+
     /**
      * Search all columns for the given term
      *
@@ -99,6 +100,22 @@ public class JobData {
         loadData();
 
         // TODO - implement this method
+
+        // TODO --- Code should  not contain duplicate jobs
+        // TODO --- Use loops to iterate in the case of expanding search fields
+        // TODO --- Utilize loos and collection methods
+
+        // Enable the user to search for a term in all the columns
+
+        /*
+            Search each field for the value
+              > If the job has that someone in its listing add it
+              > Otherwise move to the next item
+              > If no item is found return "No Results"
+         */
+       ArrayList<HashMap<String, String>> jobs = new ArrayList<>();
+
+
         return null;
     }
 
